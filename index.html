@@ -26,21 +26,21 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        var dimensionValue = 'SOME_DIMENSION_VALUE';
-        gtag('set', 'dimension1', dimensionValue);
-
-        var metricValue = '123';
-        gtag('set', 'metric1', metricValue);
-
-        gtag('config', 'UA-191887234-1');
-        // gtag('config', 'UA-191887234-1', {
-        //     'custom_map': {
-        //         'dimension2': 'age',
-        //         'metric5': 'avg_page_load_time'
-        //     }
-        // });
+        // var dimensionValue = 'SOME_DIMENSION_VALUE';
+        // gtag('set', 'dimension1', dimensionValue);
         //
-        // gtag('event', 'foo', {'age': 55, 'avg_page_load_time': 1});
+        // var metricValue = '123';
+        // gtag('set', 'metric1', metricValue);
+
+        // gtag('config', 'UA-191887234-1');
+        gtag('config', 'UA-191887234-1', {
+            'custom_map': {
+                'dimension1': 'age',
+                'metric1': 'avg_page_load_time'
+            }
+        });
+
+        gtag('event', 'foo', {'age': 55, 'avg_page_load_time': 1});
     </script>
 
 
