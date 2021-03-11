@@ -32,15 +32,18 @@
         // var metricValue = '123';
         // gtag('set', 'metric1', metricValue);
 
-        // gtag('config', 'UA-191887234-1');
-        gtag('config', 'UA-191887234-1', {
-            'custom_map': {
-                'dimension1': 'age',
-                'metric1': 'avg_page_load_time'
-            }
-        });
+        gtag('config', 'UA-191887234-1');
+        // gtag('config', 'UA-191887234-1', {
+        //     'custom_map': {
+        //         'dimension1': 'age',
+        //         'metric1': 'avg_page_load_time'
+        //     }
+        // });
 
-        gtag('event', 'foo', {'age': 55, 'avg_page_load_time': 1});
+        // gtag('event', 'foo', {'age': 55, 'avg_page_load_time': 1});
+        // gtag('event', 'foo', {'age': 55, 'avg_page_load_time': 1});
+        var dimensionValue = 'SOME_DIMENSION_VALUE';
+        gtag('set', 'dimension2', dimensionValue);
     </script>
 
 
