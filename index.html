@@ -28,9 +28,20 @@
         // // var dimensionValue = 259;
         // // ga('set', 'dimension4', dimensionValue);
 
+        // gtag('config', 'UA-191887234-1', {
+        //     'custom_map': {'dimension1': 'facility', 'dimension2': 'user_type'}
+        // });
+        //
+        // gtag('event', 'any_event_name', {'dimension_name': dimension_value});
+
+
+        // Maps 'dimension2' to 'age'.
         gtag('config', 'UA-191887234-1', {
-            'custom_map': {'dimension1': 'facility', 'dimension2': 'user_type'}
+            'custom_map': {'dimension1': 'age'}
         });
+
+        // Sends an event that passes 'age' as a parameter.
+        gtag('event', 'age_dimension', {'age': 55});
     </script>
     <meta charset="UTF-8">
     <title>Title</title>
