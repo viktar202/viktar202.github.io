@@ -3,14 +3,14 @@
 <head>
     
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-191887234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-191887234-1"></script>-->
+<!--<script>-->
+<!--  window.dataLayer = window.dataLayer || [];-->
+<!--  function gtag(){dataLayer.push(arguments);}-->
+<!--  gtag('js', new Date());-->
 
-  gtag('config', 'UA-191887234-1');
-</script>
+<!--  gtag('config', 'UA-191887234-1');-->
+<!--</script>-->
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-191887234-1"></script>
     <script>
@@ -18,10 +18,19 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-191887234-1');
-        // var dimensionValue = '1111';
-        // gtag('set', 'dimension1', dimensionValue);
-        // ga('set', 'dimension4', dimensionValue);
+        // gtag('config', 'UA-191887234-1');
+        // // var dimensionValue = '1111';
+        // // gtag('set', 'dimension1', dimensionValue);
+        // // ga('set', 'dimension4', dimensionValue);
+        //
+        //
+        // // // // var dimensionValue = 'SOME_DIMENSION_VALUE111111';
+        // // var dimensionValue = 259;
+        // // ga('set', 'dimension4', dimensionValue);
+
+        gtag('config', 'UA-191887234-1', {
+            'custom_map': {'dimension1': 'facility', 'dimension2': 'user_type'}
+        });
     </script>
     <meta charset="UTF-8">
     <title>Title</title>
