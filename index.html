@@ -17,7 +17,13 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
 
-        gtag('event', 'age_dimension2', {'age': 552});
+
+        gtag('config', 'UA-191887234-1', {
+                'custom_map': {'dimension2': 'age2'}
+            });
+
+
+        gtag('event', 'age_dimension2', {'age2': 333});
         // gtag('js', new Date());
         //
         // // gtag('config', 'UA-191887234-1');
