@@ -9,10 +9,15 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-191887234-1');
+  // gtag('config', 'UA-191887234-1');
+  //
+  // var dimensionValue = 259;
+  // gtag('set', 'dimension1', dimensionValue);
 
-  var dimensionValue = 259;
-  gtag('set', 'dimension1', dimensionValue);
+  gtag('config', 'UA-191887234-1', {
+      'custom_map': {'dimension1': 'my_username'}
+  });
+  gtag('event', 'my_username_event', {'pd1': '123'});
 </script>
     
 <!--    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-191887234-1"></script>-->
